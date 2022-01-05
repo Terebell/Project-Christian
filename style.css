@@ -1,0 +1,367 @@
+/* Polices utilisées */
+@font-face {
+    font-family: 'LuloCleanOne';
+    src:url('polices/LuloCleanOne.woff') format('woff'),
+        url('polices/LuloCleanOne.woff2') format('woff2'),
+        url('polices/LuloCleanOne.eot'),
+        url('polices/LuloCleanOne.eot?#iefix') format('embedded-opentype'),
+        url('polices/LuloCleanOne.otf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GOTHIC';
+    src:url('polices/GOTHIC.woff') format('woff'),
+        url('polices/GOTHIC.woff2') format('woff2'),
+        url('polices/GOTHIC.svg#GOTHIC') format('svg'),
+        url('polices/GOTHIC.eot'),
+        url('polices/GOTHIC.eot?#iefix') format('embedded-opentype'),
+        url('polices/GOTHIC.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GOTHICB';
+    src:url('polices/GOTHICB.woff') format('woff'),
+        url('polices/GOTHICB.woff2') format('woff2'),
+        url('polices/GOTHICB.svg#GOTHICB') format('svg'),
+        url('polices/GOTHICB.eot'),
+        url('polices/GOTHICB.eot?#iefix') format('embedded-opentype'),
+        url('polices/GOTHICB.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body /* Image de fond, police générale et couleur de police */
+{
+    background: url('images/background.png');
+    font-family: 'GOTHIC', Arial, sans-serif;
+    color: #e5bd4f;
+}
+
+#bloc_page /* Affichage de la page (largeur et marges) */
+{
+    width: 80%;
+    margin: auto;
+}
+
+section h1 /* Titres h1 des sections */
+{
+    font-family: 'LuloCleanOne', Arial, sans-serif;
+    font-size: 1.6em;
+    text-align: center;
+    text-shadow: 4px 4px 12px black;
+}
+
+.ornement
+{
+    margin-bottom: 1%;
+    text-shadow: 4px 4px 12px black;
+}
+
+
+/* Header de la page */
+header
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+#logo
+{
+    display: flex;
+    align-items: center;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+
+/* Menu du navigation */
+nav
+{
+    font-family: 'LuloCleanOne';
+    display: flex;
+}
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;    
+}
+
+nav li
+{
+    padding-right: 30px;
+}
+
+#compte
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: auto;
+}
+
+nav a
+{
+    font-size: 0.6em;
+    color: #e5bd4f;
+    padding-bottom: 20%;
+    text-decoration: none;
+    text-shadow: 4px 4px 12px black;
+}
+
+nav a:hover
+{
+    color: #e59021;
+}
+
+
+/* Bannière sous le menu de navigation */
+#banniere_image
+{
+    min-width: 100%;
+    min-height: 300px; 
+    background: url('images/banniere_03.png') no-repeat;
+    background-position: center;
+    box-shadow: 0px 0px 90px black inset;
+    border: 3px solid #2b2a2f;
+    position: relative;
+}
+
+#fleches_banniere
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    padding: 0 3% 0 3%;
+}
+
+
+/* Marteau et slogan */
+#marteau
+{
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+}
+
+#slogan
+{
+    font-family: 'LuloCleanOne', Arial, sans-serif;
+    text-align: center;
+    font-size: 0.5em;
+    padding-bottom: 5%;
+    text-shadow: 4px 4px 12px black;
+}
+
+#slogan em
+{
+    font-style: normal;
+    font-size: 1.9em;
+}
+
+
+/* Section "Nos produits phares du moment" */
+#produits_phares
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    margin-bottom: 8%;
+}
+
+#produits_phares a
+{
+    color: #e5bd4f;
+    text-decoration: none;
+}
+
+#produits_phares h4
+{
+    font-family: 'LuloCleanOne', Arial, sans-serif;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e5bd4f;
+}
+
+.patisseries /* balise aside de "Nos pâtisseries du moment" */
+{
+    border: 2px solid #e5bd4f;
+    background-color: rgba(43, 42, 47, 0.5);
+    box-shadow: 5px 5px 15px #2b2a2f;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.95em;
+    padding: 0 1% 1% 1%;
+}
+
+.ballotins /* balise aside de "Notre gamme de ballotins" */
+{
+    border: 2px solid #e5bd4f;
+    background-color: rgba(43, 42, 47, 0.5);
+    box-shadow: 5px 5px 15px #2b2a2f;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.95em;
+    padding: 0% 1% 1% 1%;
+}
+
+.douceurs_automne /* balise aside de "Nos douceurs d'automne" */
+{
+    border: 2px solid #e5bd4f;
+    background-color: rgba(43, 42, 47, 0.5);
+    box-shadow: 5px 5px 15px #2b2a2f;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.95em;
+    padding: 0 1% 1% 1%;
+}
+
+
+/* Section des tablettes d'exception */
+#section_tablettes
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100%;
+    min-height: 400px; 
+    background: url('images/background_tablettes_02.jpg') no-repeat;
+    background-position: center;
+    box-shadow: 0px 0px 90px black inset;
+    border: 3px solid #2b2a2f;
+    position: relative;
+    margin-bottom: 8%;
+}
+
+#section_tablettes h1
+{
+    padding-top: 3%;
+}
+
+#section_tablettes h4
+{
+    width: 400px;
+    font-size: 1.3em;
+    text-align: center;
+    text-shadow: 4px 4px 12px black;
+}
+
+#section_tablettes a
+{
+    padding-top: 1%;
+    color: #e5bd4f;
+    text-decoration: none;
+}
+
+#section_tablettes a:hover
+{
+    color: #e59021;
+}
+
+
+/* Bas de page */
+#footer
+{
+    border-top: 1px solid #e5bd4f;
+    font-family: 'LuloCleanOne', Arial, sans-serif;
+    font-size: 0.7em;
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 27% 0 27%;
+}
+
+footer h4
+{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3em;
+}
+
+footer ul
+{
+    list-style-position: outside;
+    list-style-type: none;
+}
+
+footer li
+{
+    padding-bottom: 5%;
+    text-align: left;
+}
+
+footer li em
+{
+    font-size: 0.7em;
+    font-style: normal;
+}
+
+footer a
+{
+    color: #e59021;
+    text-decoration: none;
+}
+
+footer a:hover
+{
+    color: #e83f66;
+}
+
+
+/* Informations spéciales pour la période de Noël */
+.noel
+{
+    background-color: rgba(232, 63, 102, 0.2);
+    border: 3px solid rgba(232, 63, 102, 0.2);
+    text-align: center;
+    padding: 1% 1% 1% 1%;
+    font-size: 1em;
+    margin-bottom: 8%;
+}
+
+.noel h3
+{
+    font-family: 'LuloCleanOne', Arial, sans-serif;
+}
+
+.noel ul
+{
+    list-style-position: outside;
+    list-style-type: none;
+}
+
+.noel li
+{
+    padding-bottom: 1%;
+}
+
+.noel a
+{
+    font-family: 'LuloCleanOne', Arial, sans-serif;
+    text-decoration: none;
+    font-size: 0.8em;
+    color: #e59021;
+}
+
+.noel a:hover
+{
+    color: #e83f66;
+}
